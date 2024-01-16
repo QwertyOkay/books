@@ -24,7 +24,9 @@ function Dropdown() {
         <ul className={styles.dropdownList}>
           {options.map(option => (
             <li
-              className={styles.dropdownItem}
+              className={`${styles.dropdownItem} ${
+                selectedOption === option ? styles.selected : ''
+              }`}
               onClick={onOptionClicked(option)}
               key={option}
             >
