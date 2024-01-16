@@ -18,7 +18,7 @@
 
 .cardImage {
   position: relative;
-  mix-blend-mode: darken;
+  // mix-blend-mode: darken;
 
   width: 190.4px;
   height: 240px;
@@ -57,7 +57,7 @@
   flex-grow: 1;
   font-size: 18px;
   font-weight: 500;
-  color: #000;
+  color: var(--1-W1);
   // color: var(--color-primary);
 }
 

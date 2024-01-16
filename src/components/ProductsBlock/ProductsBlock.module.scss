@@ -3,7 +3,7 @@
 
 .sectionTitle {
   color: var(--1-W1, #fff);
-  text-align: right;
+  text-align: left;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -11,8 +11,9 @@
   line-height: normal;
   letter-spacing: 0.027px;
   text-transform: capitalize;
+  padding: 24px;
   @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
   }
 }
 
@@ -21,7 +22,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: -10px;
+
+    border-top: 1px solid #393f45;
+    width: 100%;
   }
 }
 

@@ -1,6 +1,8 @@
 @import-normalize;
 /* bring in normalize.css styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,9 +44,11 @@ html {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: Inter;
+  // font-family: 'Nunito Sans', sans-serif;
   overflow: overlay;
-  color: var(--color-black);
+  color: var(--1-W1);
+  background-color: var(--color-black);
 }
 
 code {

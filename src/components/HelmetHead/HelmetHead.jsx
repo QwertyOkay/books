@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-const TITLE = 'HB.com';
+const TITLE = 'Books Project';
 
 function HelmetHead() {
   return (
