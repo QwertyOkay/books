@@ -10,11 +10,10 @@
 
 .dropdownButton {
   padding: 10px;
-  // background-color: #333;
   color: #fff;
   border: none;
   cursor: pointer;
-  text-align: right; // Выравнивание текста по правому краю
+  text-align: right;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -53,15 +52,14 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    margin-left: 8px; // Отступ слева от текста до иконки
-    // background-image: url('../../../public/img/down.svg'); // Путь к иконке
+    margin-left: 8px;
+
     background-size: contain;
     background-repeat: no-repeat;
-    vertical-align: middle; // Выравнивание по центру относительно текста
+    vertical-align: middle;
   }
 
   &.active::after {
-    // Стили для иконки при активном (открытом) состоянии
     content: url('../../../public/img/up.svg');
   }
 }
@@ -79,15 +77,12 @@
   border-radius: 8px;
   background: #1f1f1f;
   top: 125%;
-  /* bottom: -129px; */
   left: 42%;
 }
 
 .dropdownItem {
-  // padding: 12px 16px;
   cursor: pointer;
   list-style-type: none;
-  // background-color: #f9f9f9;
   transition: background-color 0.2s;
 
   display: flex;
