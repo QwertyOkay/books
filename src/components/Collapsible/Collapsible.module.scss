@@ -1,0 +1,49 @@
+@import "styles/vars";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.item:not(:first-child) {
+  margin-top: 6px;
+}
+
+.item::after {
+  content: "";
+  width: 100%;
+  border: 1px solid rgb(238, 237, 237);
+}
+
+.itemTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.label {
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.content {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.content p {
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.content img {
+  max-width: 400px;
+}
+
+.parent {
+  height: 0px;
+  overflow: hidden;
+  @include Animation(height);
+}

@@ -1,0 +1,126 @@
+@import '../../styles/vars.scss';
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 70px;
+
+  background-color: var(--color-primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sticky {
+  background-color: rgba(59, 88, 107, 0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @include Animation(all);
+}
+
+.container {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  @media (min-width: 720px) {
+    padding: 0 28px;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo svg {
+  width: 45px;
+  height: auto;
+  @include Animation(filter);
+
+  // &:hover,
+  // &:focus {
+  //   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.3));
+  // }
+
+  // &:active {
+  //   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+  // }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-grey);
+  cursor: pointer;
+
+  @media (max-width: 719px) {
+    order: 3;
+  }
+}
+
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.amount {
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  font-size: 12px;
+  background-color: var(--color-accent-variant);
+  color: var(--color-white);
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.MuiInputBase-root {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  color: rgba(0, 0, 0, 0.87);
+  box-sizing: border-box;
+  position: relative;
+  cursor: text;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 15px !important;
+  opacity: 1;
+  background-color: #ff6701 !important;
+  border-radius: 5px !important;
+  color: white;
+  -webkit-transition: opacity 0.9s;
+  transition: opacity 0.9s;
+}

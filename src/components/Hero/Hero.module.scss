@@ -1,0 +1,98 @@
+@import 'styles/vars';
+
+.container {
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero {
+  position: relative;
+  height: 35vh;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--color-black);
+  background-image: url(../../assets/images/hero.jpg);
+
+  @media screen and (min-width: 720px) {
+    height: 60vh;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 70vh;
+    margin-top: 40px;
+  }
+}
+
+.linkWrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4em 1em;
+  line-height: 35px;
+  border: 1px solid;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-color: transparent;
+  color: var(--color-white);
+  // text-shadow: 2px 2px 3px rgb(47, 72, 88, 80%);
+  @include Animation(all);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 2rem;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    @include Animation(all);
+  }
+
+  &::before {
+    z-index: -1;
+    width: 100%;
+    left: 0;
+    background-color: #2f4858;
+    border-radius: 2px;
+  }
+
+  &::after {
+    z-index: 1;
+    left: 50%;
+    width: 0;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transform: translate(-50%, 0);
+  }
+
+  &:hover {
+    color: #000;
+
+    &::before {
+      transform: scale(0, 1);
+    }
+
+    &::after {
+      width: 100%;
+      border-color: #000;
+      transition-delay: 0.2s;
+    }
+  }
+}

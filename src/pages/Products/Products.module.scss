@@ -1,0 +1,133 @@
+.products {
+  position: relative;
+  padding-bottom: 60px;
+  background-color: #f5f5f5;
+
+  background-position: 0 0, 4px 4px;
+  background-size: 4px 4px;
+
+  @media screen and (min-width: 1280px) {
+    padding: 120px 40px;
+    display: flex;
+    column-gap: 70px;
+  }
+}
+
+.left {
+  position: sticky;
+  flex: 1;
+  height: 100%;
+  top: 80px;
+
+  @media screen and (max-width: 1279px) {
+    z-index: 9;
+    top: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 12px;
+    background-color: rgb(217, 217, 217, 90%);
+  }
+}
+
+.leftItem {
+  @media screen and (max-width: 1279px) {
+    min-width: 130px;
+  }
+}
+
+.leftItem:not(:last-child) {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 28px;
+  }
+}
+
+.itemName {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  @media screen and (max-width: 1279px) {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}
+
+.productsTitle {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.inputItem {
+  display: flex;
+  column-gap: 4px;
+  margin-bottom: 8px;
+  width: 218px;
+  margin: 20px auto;
+}
+
+.inputItem label {
+  margin-left: 8px;
+}
+
+.right {
+  min-height: 560px;
+
+  @media screen and (max-width: 1279px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex: 5;
+  }
+}
+
+.catImg {
+  max-width: 1070px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+// .MuiPagination-root {
+//   button {
+//     color: green !important;
+//   }
+// }
+
+.range-input-container {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.styledRange {
+  width: 80px;
+  // height: 10px;
+  border: none;
+  background-color: #ccc;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  @media screen and (min-width: 1280px) {
+    width: 105px;
+  }
+}
+
+.styledRange::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Firefox */
+.styledRange::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
