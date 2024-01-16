@@ -17,13 +17,35 @@
   }
 }
 
+.sectionBox {
+  border-bottom: 1px solid #393f45;
+}
+
+.sectionWrap {
+  display: flex;
+  align-items: center;
+  padding: 24px 0px 12px;
+  gap: 700px;
+  justify-content: space-around;
+}
+
+.sectionNumber {
+  color: #fff;
+  text-align: right;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.027px;
+  text-transform: capitalize;
+}
+
 .products {
   @media screen and (min-width: 720px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-    border-top: 1px solid #393f45;
     width: 100%;
   }
 }

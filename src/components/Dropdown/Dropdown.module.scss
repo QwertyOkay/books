@@ -1,0 +1,65 @@
+// Dropdown.module.scss
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownButton {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.dropdownList {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dropdownItem {
+  padding: 12px 16px;
+  cursor: pointer;
+  list-style-type: none;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+.dropdownSort {
+  position: relative;
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.021px;
+  text-transform: capitalize;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 22.001px;
+    height: 20px;
+    margin-right: 8px;
+    background-image: url('../../../public/img/updown.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+}
