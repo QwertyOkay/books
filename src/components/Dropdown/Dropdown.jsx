@@ -17,7 +17,10 @@ function Dropdown() {
   return (
     <div className={styles.dropdown}>
       <span className={styles.dropdownSort}>Sort By</span>
-      <button className={styles.dropdownButton} onClick={toggleDropdown}>
+      <button
+        className={`${styles.dropdownButton} ${isOpen ? styles.active : ''}`}
+        onClick={toggleDropdown}
+      >
         {selectedOption}
       </button>
       {isOpen && (

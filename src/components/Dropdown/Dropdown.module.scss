@@ -107,6 +107,18 @@
   // }
 }
 
+.selected {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.021px;
+  text-transform: capitalize;
+}
+
 .dropdownSort {
   position: relative;
   color: #fff;
