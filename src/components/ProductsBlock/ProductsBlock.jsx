@@ -17,7 +17,7 @@ function ProductsBlock({ type }) {
           <div>
             <span className={styles.sectionNumber}>122 books</span>
           </div>
-          <Dropdown></Dropdown>
+          <Dropdown />
         </div>
         <div className={styles.products}>
           {products?.map(item =>
