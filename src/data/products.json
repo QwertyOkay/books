@@ -3,8 +3,8 @@
     "id": 1,
     "image": "/img/products/1.png",
     "image2": "/img/products/02.jpg",
-    "title": "2112 SOLSTICE TEE",
-    "desc": "Rush’s 1976 album, 2112, the greatest concept album of all time. That’s just our humble opinion of course.",
+    "title": "J.K. Rowling",
+    "desc": "Harry Potter and the Philosopher's Stone",
     "category": "",
     "badge": "top",
     "type": "best sellers",
@@ -12,14 +12,14 @@
     "colors": ["black"],
     "sizes": ["M", "L", "XL", "XXL"],
     "features": ["Printed on 100% cotton Gildan SoftStyle."],
-    "rating": "4"
+    "rating": "5/5"
   },
   {
     "id": 2,
     "image": "/img/products/2.png",
     "image2": "/img/products/04.jpg",
-    "title": "ROLL THE BONES KICKMAN TEE",
-    "desc": "Not every tee has to be black, right? ",
+    "title": "Stephen King",
+    "desc": "The Shining",
     "category": "",
     "badge": "",
     "type": "best sellers",
@@ -27,14 +27,14 @@
     "colors": ["blue"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "features": ["Printed on Carolina Blue, 100% cotton Gildan SoftStyle."],
-    "rating": "5"
+    "rating": "4/5"
   },
   {
     "id": 3,
     "image": "/img/products/3.png",
     "image2": "/img/products/06.jpg",
-    "title": "ROLL THE BONES KICKMAN HOODY",
-    "desc": "Stylish Roll The Bones design on a heavyweight hoody.",
+    "title": "J.R.R. Tolkien",
+    "desc": "The Lord of the Rings",
     "category": "",
     "badge": "",
     "type": "best sellers",
@@ -44,14 +44,14 @@
     "features": [
       "Printed on Gunmetal Heather, 80/20 cotton/poly Independent Trading Style 4000. For exact sizing, please search style name and number."
     ],
-    "rating": "4.5"
+    "rating": "5/5"
   },
   {
     "id": 4,
     "image": "/img/products/4.png",
     "image2": "/img/products/08.jpg",
-    "title": "SIGNALS 40 RAGLAN",
-    "desc": "A celebratory raglan for the 40th Anniversary of the album, Signals.",
+    "title": "Margaret Atwood",
+    "desc": "The Handmaid's Tale",
     "category": "",
     "badge": "",
     "type": "best sellers",
@@ -64,14 +64,14 @@
       "90% ringspun cotton, 10% polyester.",
       " For exact sizing, search Tultex style #245"
     ],
-    "rating": "4.5"
+    "rating": "3/5"
   },
   {
     "id": 5,
     "image": "/img/products/5.png",
     "image2": "/img/products/10.jpg",
-    "title": "RUSH 1974 BOMBER JACKET",
-    "desc": "A lightweight Rush Bomber for spring.",
+    "title": "George Orwell",
+    "desc": "1984",
     "category": "",
     "badge": "",
     "type": "best sellers",
@@ -83,14 +83,14 @@
       "Pockets on the side.",
       "For exact sizing, please see attached size chart."
     ],
-    "rating": "4"
+    "rating": "5/5"
   },
   {
     "id": 6,
     "image": "/img/products/6.png",
     "image2": "",
-    "title": "COUNTERPARTS PATCH LONGSLEEVE",
-    "desc": "This is the original design from way back on the Counterparts Tour.",
+    "title": "Harper Leet",
+    "desc": "To Kill a Mockingbird",
     "category": "",
     "badge": "",
     "type": "best sellers",
@@ -101,14 +101,14 @@
       " A 100% cotton longsleeve, with a woven patch with the nut & bolt, and RUSH embroidered above.",
       "Printed on 100% cotton Next Level Apparel."
     ],
-    "rating": "4.5"
+    "rating": "2/5"
   },
   {
     "id": 7,
     "image": "/img/products/7.png",
     "image2": "",
-    "title": "R40 WASHED TRI-LOGO HOODY",
-    "desc": "This artwork is from the Neil Peart stage tees collection, from the R40 Tour.",
+    "title": "Gabriel García Márquez",
+    "desc": "One Hundred Years of Solitude",
     "category": "",
     "badge": "new",
     "type": "best sellers",
@@ -120,14 +120,14 @@
       "This is printed on a soft-washed, ring spun, 80/20 cotton/poly hoody from Comfort Colors.",
       "This is garment-dyed, which means it has that lived-in, washed-out feel."
     ],
-    "rating": "4"
+    "rating": "5/5"
   },
   {
     "id": 8,
     "image": "/img/products/8.png",
     "image2": "/img/products/16.jpg",
-    "title": "RUSH LUXURY BATHROBE",
-    "desc": "Decadent Turkish cotton bathrobe for lounging around the house.",
+    "title": "Jane Austen",
+    "desc": "Pride and Prejudice",
     "category": "",
     "badge": "top",
     "type": "best sellers",
@@ -140,14 +140,14 @@
       "This robe comes in two sizes, and we recommend the larger size for anyone over 5’9” in height.",
       "100% Turkish Cotton Terry."
     ],
-    "rating": "4.5"
+    "rating": "4/5"
   },
   {
     "id": 9,
     "image": "/img/products/9.png",
     "image2": "/img/products/18.jpg",
-    "title": "AFTK 40TH KINGS HOODY",
-    "desc": "The Kings Hoody is one of the all time, longest-standing designs Rush has had in the product line.",
+    "title": "Charles Dickens",
+    "desc": "Great Expectations",
     "category": "",
     "badge": "",
     "type": "best sellers",
@@ -159,14 +159,14 @@
       "Printed on the front and back, and an embroidered Starman on the front near the pocket.",
       "Fabric is cotton/poly blend."
     ],
-    "rating": "5"
+    "rating": "2/5"
   },
   {
     "id": 10,
     "image": "/img/products/10.png",
     "image2": "",
-    "title": "NAVY STENCIL STARMAN TEE",
-    "desc": "The Starman is looking good on this navy blue tee. ",
+    "title": "Margaret Atwood",
+    "desc": "The Handmaid's Tale",
     "category": "",
     "badge": "",
     "type": "best sellers",
@@ -176,6 +176,6 @@
     "features": [
       "This tee is printed on 100% cotton Gildan SoftStyle or similar."
     ],
-    "rating": "5"
+    "rating": "5/5"
   }
 ]

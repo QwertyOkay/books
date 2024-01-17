@@ -31,11 +31,9 @@ function Card({ item, type }) {
             size="small"
           />
         )}
-        <ul className={styles.priceList}>
-          {item?.oldPrice && (
-            <li className={styles.oldPrice}>€ {item?.oldPrice.toFixed(2)}</li>
-          )}
-          <li className={styles.price}>€ {item?.price.toFixed(2)}</li>
+        <ul className={styles.descList}>
+          <li className={styles.desc}>{item?.desc}</li>
+          <li className={styles.rating}>{item?.rating}</li>
         </ul>
       </div>
     </Link>
