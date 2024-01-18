@@ -65,8 +65,4 @@ function Card({ item, type }) {
   );
 }
 
-// Компоненты иконок для просмотренных и непросмотренных товаров
-const ViewedIcon = () => <span>Viewed Icon</span>; // Замените на вашу иконку "просмотрено"
-const DefaultIcon = () => <span>Default Icon</span>; // Замените на вашу иконку по умолчанию
-
 export default Card;

@@ -5,7 +5,7 @@ function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState('Name');
 
-  const options = ['Popularity', 'Name', 'Newest'];
+  const options = ['Author', 'Name', 'Rating'];
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 

@@ -33,17 +33,9 @@
 .badge {
   z-index: 2;
   position: absolute;
-  top: 4px;
-  left: 28px;
-  padding: 2px 4px;
-  border-radius: 2px;
-  background-color: #2f4859;
-  color: #fff;
-  text-transform: uppercase;
-
-  @media screen and (min-width: 1280px) {
-    font-size: 0.8rem;
-  }
+  top: 8px;
+  right: 16px;
+  // padding: 4px;
 }
 
 .desc {
