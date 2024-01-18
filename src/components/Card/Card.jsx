@@ -1,28 +1,53 @@
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component'; // Добавьте этот импорт
-import 'react-lazy-load-image-component/src/effects/blur.css'; // Опционально, для эффекта размытия при загрузке
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import ControlRating from 'components/ControlRating';
 import styles from './Card.module.scss';
+import { ReactComponent as ViewedIconSVG } from '../../assets/images/Already.svg';
+import { ReactComponent as DefaultIconSVG } from '../../assets/images/Notyet.svg';
 
 function Card({ item, type }) {
+  // Состояние для отслеживания, просмотрен ли товар
+  const [isViewed, setIsViewed] = useState(false);
+
+  useEffect(() => {
+    // При монтировании компонента проверяем, просмотрен ли товар
+    const viewedItems = JSON.parse(localStorage.getItem('viewedItems') || '{}');
+    setIsViewed(!!viewedItems[item.id]);
+  }, [item.id]);
+
+  const handleViewed = () => {
+    // Отмечаем товар как просмотренный при клике на карточку
+    const viewedItems = JSON.parse(localStorage.getItem('viewedItems') || '{}');
+    viewedItems[item.id] = true;
+    localStorage.setItem('viewedItems', JSON.stringify(viewedItems));
+    setIsViewed(true);
+  };
+
   return (
-    <Link to={`/product/${item?.id}`} className={styles.card}>
+    // Вызываем handleViewed при клике на ссылку
+    <Link
+      to={`/product/${item?.id}`}
+      className={styles.card}
+      onClick={handleViewed}
+    >
       <div className={styles.cardImage}>
-        {/* Замените тег img на LazyLoadImage */}
         <LazyLoadImage
-          src={item?.image} // Используйте URL изображения из вашего объекта item
-          alt={item?.title} // Альтернативный текст из объекта item
-          effect="blur" // Эффект размытия при загрузке (опционально)
-          className={styles.mainImage} // Используйте тот же класс стиля
+          src={item?.image}
+          alt={item?.title}
+          effect="blur"
+          className={styles.mainImage}
         />
+        {/* Отображаем badge, если он есть */}
         {item.badge && (
           <div className={styles.badge}>
-            <span>{item.badge}</span>
+            {isViewed ? <ViewedIconSVG /> : <DefaultIconSVG />}
           </div>
         )}
       </div>
       <div className={styles.desc}>
         <h2 className={styles.title}>{item?.title}</h2>
+        {/* Отображаем ControlRating, если тип товара не совпадает с переданным типом */}
         {item.type !== type && (
           <ControlRating
             rating={Number(item.rating)}
@@ -40,54 +65,8 @@ function Card({ item, type }) {
   );
 }
 
+// Компоненты иконок для просмотренных и непросмотренных товаров
+const ViewedIcon = () => <span>Viewed Icon</span>; // Замените на вашу иконку "просмотрено"
+const DefaultIcon = () => <span>Default Icon</span>; // Замените на вашу иконку по умолчанию
+
 export default Card;
-
-// import { Link } from 'react-router-dom';
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
-// import { useEffect, useState } from 'react'; // Добавьте эти импорты
-// import ControlRating from 'components/ControlRating';
-// import styles from './Card.module.scss';
-
-// function Card({ item, type }) {
-//   // Состояние, отвечающее за проверку, просмотрен ли товар
-//   const [isViewed, setIsViewed] = useState(false);
-
-//   // Путь к иконкам
-//   const viewedIcon = '/path/to/viewed/icon.svg';
-//   const notViewedIcon = '/path/to/not-viewed/icon.svg';
-
-//   useEffect(() => {
-//     // Проверяем статус просмотра в локальном хранилище
-//     const viewedStatus = localStorage.getItem(`viewed-${item.id}`);
-//     setIsViewed(viewedStatus === 'true');
-//   }, [item.id]);
-
-//   // Функция для обновления статуса просмотра
-//   const handleView = () => {
-//     localStorage.setItem(`viewed-${item.id}`, 'true');
-//     setIsViewed(true);
-//     // Здесь может быть логика обновления состояния через Redux
-//   };
-
-//   return (
-//     <Link to={`/product/${item?.id}`} className={styles.card} onClick={handleView}>
-//       <div className={styles.cardImage}>
-//         <LazyLoadImage
-//           src={item?.image}
-//           alt={item?.title}
-//           effect="blur"
-//           className={styles.mainImage}
-//         />
-//         {/* Условное отображение иконки на основе статуса */}
-//         <div className={styles.badge}>
-//           <img src={isViewed ? viewedIcon : notViewedIcon} alt="Status" />
-//         </div>
-//       </div>
-//       <div className={styles.desc}>
-//         {/* Остальной код */}
-//       </div>
-//     </Link>
-//   );
-// }
-
-// export default Card;
