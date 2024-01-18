@@ -14,8 +14,9 @@ function ProductsBlock({ type }) {
         </div>
 
         <div className={styles.sectionWrap}>
-          <div>
-            <span className={styles.sectionNumber}>122 books</span>
+          <div className={styles.sectionHolder}>
+            <span>122</span>
+            <span>Books</span>
           </div>
           <Dropdown />
         </div>

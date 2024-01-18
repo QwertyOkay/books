@@ -21,10 +21,29 @@
   border-bottom: 1px solid #393f45;
 }
 
+.sectionHolder {
+  display: flex;
+  height: 32px;
+  padding: 0px 10px 0px 12px;
+  align-items: center;
+  gap: 10px;
+
+  color: #fff;
+  text-align: right;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.027px;
+  text-transform: capitalize;
+}
+
 .sectionWrap {
   display: flex;
   align-items: center;
-  padding: 24px 0px 12px;
+  // padding: 24px 0px 12px;
+  padding: 24px 35px 12px;
   gap: 700px;
   justify-content: center;
   width: 1112px;
@@ -40,7 +59,12 @@
   line-height: normal;
   letter-spacing: 0.027px;
   text-transform: capitalize;
+  padding: 0px 10px 0px 12px;
 }
+
+// .sectionNumberHolder {
+//   margin-left: 35px;
+// }
 
 .products {
   @media screen and (min-width: 720px) {
@@ -56,11 +80,11 @@
 
   @media screen and (min-width: 720px) {
     flex-basis: calc(100% / 2 - 10px * 2);
-    margin: 10px;
+    margin: 12px;
   }
 
   @media screen and (min-width: 1280px) {
-    flex-basis: calc(3.3333333333% - 20px);
+    flex-basis: calc(3.3333333333%);
   }
 
   &:not(:last-child) {
