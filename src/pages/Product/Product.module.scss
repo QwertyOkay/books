@@ -9,16 +9,6 @@
   }
 }
 
-.images {
-  height: fit-content;
-  flex: 1;
-}
-
-.images img {
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
 .mainImg {
   width: 284px;
   height: 358px;
@@ -39,81 +29,11 @@
   }
 }
 
-.mainImg img {
-  max-height: 690px;
-  max-width: max-content;
-  object-fit: contain;
-}
-
-.right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-
-  @media screen and (max-width: 1279px) {
-    text-align: center;
-  }
-}
-
-.linkList {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--color-secondary);
-  font-size: 14px;
-}
-
-.details li {
-  display: flex;
-  line-height: 1.3em;
-
-  &:not(:last-child) {
-    margin-bottom: 6px;
-  }
-
-  &::before {
-    content: '•';
-    padding-right: 0.8rem;
-  }
-}
-
-.details li p {
-  margin-top: 6px;
-  margin-left: 21px;
-}
-
-.details tr:nth-child(1) {
-  background-color: var(--color-grey);
-}
-
-.details th {
-  min-width: 120px;
-  padding: 0.8rem 1.6rem;
-  font-weight: 500;
-
-  @media screen and (min-width: 1280px) {
-    min-width: 200px;
-  }
-}
-
-.details th:nth-child(1) {
-  background-color: var(--color-grey);
-}
-
-.details td {
-  min-width: 120px;
-  width: 100%;
-  padding: 0.8rem 1.6rem;
-  text-align: center;
-}
+// .mainImg img {
+//   max-height: 690px;
+//   max-width: max-content;
+//   object-fit: contain;
+// }
 
 .header {
   padding: 16px 0px 22px 17px;
@@ -159,7 +79,9 @@
 
 .reviews {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
+  gap: 16px; /* Расстояние между отзывами */
 
   .key {
     color: #fff;
@@ -195,11 +117,14 @@
     line-height: 150%; /* 24px */
     letter-spacing: 0.024px;
     text-transform: capitalize;
+    border: none;
   }
 }
 
-.reviewer {
-  // стили для подписи рецензента
+.review {
+  padding: 10px; /* Отступ для каждого отзыва */
+  border: 1px solid #ccc; /* Если нужна рамка для отзыва */
+  margin-bottom: 10px; /* Отступ снизу для отзыва */
 }
 
 .info {
