@@ -27,7 +27,7 @@
 }
 
 .badge {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   top: 8px;
   right: 16px;
@@ -74,4 +74,58 @@
   line-height: 150%; /* 21px */
   text-transform: capitalize;
   margin-top: 8px;
+}
+
+// .cardImage {
+//   position: relative;
+//   overflow: hidden; // Это свойство предотвратит выход псевдоэлемента за пределы .cardImage
+//   border-radius: 15px; // Устанавливаем скругление углов здесь
+
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: linear-gradient(
+//       lightgray 50%,
+//       #d9d9d9
+//     ); // Эффект "затемнения" поверх изображения
+//     z-index: 2; // Убедитесь, что этот z-index выше, чем у изображения
+//   }
+
+//   img {
+//     display: block; // Это уберет нижний отступ, который иногда появляется под изображениями
+//     width: 100%; // Растягиваем изображение на всю ширину контейнера
+//     height: auto; // Высота изображения будет автоматически рассчитана
+//     border-radius: 15px; // Скругление углов для изображения
+//     position: relative;
+//     z-index: 1; // Изображение должно быть под псевдоэлементом
+//   }
+// }
+
+.cardImage {
+  position: relative;
+  overflow: hidden; // Гарантирует, что псевдоэлемент не выйдет за границы карточки
+  border-radius: 15px; // Скругление углов карточки
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; // Скругление углов изображения
+    position: relative;
+    z-index: 1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2323230f;
+    z-index: 2;
+  }
 }

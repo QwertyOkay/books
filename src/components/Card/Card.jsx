@@ -26,9 +26,8 @@ function Card({ item, type }) {
 
   // Инлайновый стиль для фона карточки
   const cardStyle = {
-    backgroundImage: `url(${item?.image}), linear-gradient(lightgray 50%, #D9D9D9)`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
+    // backgroundImage: `url(${item?.image}), linear-gradient(lightgray 50%, #D9D9D9)`,
+
     borderRadius: '15px', // Добавление border-radius
   };
 
