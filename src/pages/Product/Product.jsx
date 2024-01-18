@@ -53,14 +53,16 @@ function Product() {
             </div>
             <div className={styles.reviewsContainer}>
               <span className={styles.key}>Reader Reviews:</span>
-              {reviews.map((review, index) => (
-                <blockquote
-                  key={review.id}
-                  className={
-                    styles.review +
-                    (index === 0 ? ` ${styles.firstReview}` : '')
-                  }
-                >
+              {reviews.length > 0 && (
+                <blockquote className={styles.review}>
+                  <p className={styles.value}>"{reviews[0].text}"</p>
+                  <cite className={styles.reviewer}>
+                    {reviews[0].reviewer}, {reviews[0].age} years old
+                  </cite>
+                </blockquote>
+              )}
+              {reviews.slice(1).map(review => (
+                <blockquote key={review.id} className={styles.review}>
                   <p className={styles.value}>"{review.text}"</p>
                   <cite className={styles.reviewer}>
                     {review.reviewer}, {review.age} years old

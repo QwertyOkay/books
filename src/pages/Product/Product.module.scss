@@ -2,6 +2,7 @@
 
 .product {
   padding: 40px 77px 0px 40px;
+
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: row;
@@ -76,7 +77,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px; /* Расстояние между отзывами */
+  gap: 16px;
+  /* Расстояние между отзывами */
 
   .key {
     color: #fff;
@@ -98,7 +100,8 @@
     padding: 10px 0px 0px 0px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
     letter-spacing: 0.024px;
     text-transform: capitalize;
   }
@@ -109,18 +112,13 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
     letter-spacing: 0.024px;
     text-transform: capitalize;
     border: none;
   }
 }
-
-// .review {
-//   padding: 10px; /* Отступ для каждого отзыва */
-//   border: 1px solid #ccc; /* Если нужна рамка для отзыва */
-//   margin-bottom: 10px; /* Отступ снизу для отзыва */
-// }
 
 .info {
   display: inline-flex;
@@ -138,26 +136,27 @@
     padding: 10px;
   }
 }
-// .firstReviewBlock {
-//   display: flex;
-//   align-items: flex-start;
-//   gap: 16px; /* Расстояние между ключом и отзывом */
-// }
+
 .otherReviews {
   display: flex;
   flex-direction: column;
-  width: 100%; /* Чтобы занять всю ширину контейнера */
+  width: 100%;
+  /* Чтобы занять всю ширину контейнера */
 }
 
 .review {
-  padding: 10px; /* Отступ для каждого отзыва */
-  border: none; /* Убрать рамку, если она не нужна */
-  margin-bottom: 10px; /* Отступ снизу для отзыва */
+  padding: 10px;
+  /* Отступ для каждого отзыва */
+  border: none;
+  /* Убрать рамку, если она не нужна */
+  margin-bottom: 10px;
+  /* Отступ снизу для отзыва */
   max-width: 520px;
 }
 
 .reviewer {
-  display: block; /* Делаем имя рецензента блочным элементом */
+  display: block;
+  /* Делаем имя рецензента блочным элементом */
 }
 
 .firstReviewBlock {
