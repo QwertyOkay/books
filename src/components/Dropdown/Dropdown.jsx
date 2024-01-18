@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Dropdown.module.scss';
 
-function Dropdown() {
+function Dropdown({ onSort }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState('Name');
 
@@ -12,6 +12,8 @@ function Dropdown() {
   const onOptionClicked = value => () => {
     setSelectedOption(value);
     setIsOpen(false);
+    // Обновляем ключ сортировки в зависимости от выбранной опции
+    onSort(value === 'Name' ? 'name' : value.toLowerCase());
   };
 
   return (

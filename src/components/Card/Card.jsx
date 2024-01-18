@@ -24,13 +24,6 @@ function Card({ item, type }) {
     setIsViewed(true);
   };
 
-  // Инлайновый стиль для фона карточки
-  const cardStyle = {
-    // backgroundImage: `url(${item?.image}), linear-gradient(lightgray 50%, #D9D9D9)`,
-
-    borderRadius: '15px', // Добавление border-radius
-  };
-
   return (
     // Вызываем handleViewed при клике на ссылку
     <Link
@@ -38,10 +31,10 @@ function Card({ item, type }) {
       className={styles.card}
       onClick={handleViewed}
     >
-      <div className={styles.cardImage} style={cardStyle}>
+      <div className={styles.cardImage}>
         <LazyLoadImage
           src={item?.image}
-          alt={item?.title}
+          alt={item?.author}
           effect="blur"
           className={styles.mainImage}
         />
@@ -53,7 +46,7 @@ function Card({ item, type }) {
         )}
       </div>
       <div className={styles.desc}>
-        <h2 className={styles.title}>{item?.title}</h2>
+        <h2 className={styles.author}>{item?.author}</h2>
         {/* Отображаем ControlRating, если тип товара не совпадает с переданным типом */}
         {item.type !== type && (
           <ControlRating
@@ -64,7 +57,7 @@ function Card({ item, type }) {
           />
         )}
         <ul className={styles.descList}>
-          <li className={styles.desc}>{item?.desc}</li>
+          <li className={styles.desc}>{item?.name}</li>
           <li className={styles.rating}>{item?.rating}</li>
         </ul>
       </div>
