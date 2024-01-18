@@ -133,6 +133,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  .key {
+    padding: 10px;
+  }
 }
 // .firstReviewBlock {
 //   display: flex;

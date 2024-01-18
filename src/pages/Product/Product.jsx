@@ -12,7 +12,7 @@ function Product() {
   const catId = parseInt(useParams().id);
   let productItem = products.find(item => item.id === catId);
 
-  const [firstReview, ...otherReviews] = productItem.reviews;
+  const reviews = productItem.reviews;
 
   return (
     <Section>
@@ -52,25 +52,21 @@ function Product() {
               <p className={styles.value}>{productItem.description}</p>
             </div>
             <div className={styles.reviewsContainer}>
-              <div className={styles.firstReviewBlock}>
-                <span className={styles.key}>Reader Reviews:</span>
-                <blockquote key={firstReview.id} className={styles.review}>
-                  <p className={styles.value}>"{firstReview.text}"</p>
+              <span className={styles.key}>Reader Reviews:</span>
+              {reviews.map((review, index) => (
+                <blockquote
+                  key={review.id}
+                  className={
+                    styles.review +
+                    (index === 0 ? ` ${styles.firstReview}` : '')
+                  }
+                >
+                  <p className={styles.value}>"{review.text}"</p>
                   <cite className={styles.reviewer}>
-                    {firstReview.reviewer}, {firstReview.age} years old
+                    {review.reviewer}, {review.age} years old
                   </cite>
                 </blockquote>
-              </div>
-              <div className={styles.otherReviews}>
-                {otherReviews.map(review => (
-                  <blockquote key={review.id} className={styles.review}>
-                    <p className={styles.value}>"{review.text}"</p>
-                    <cite className={styles.reviewer}>
-                      {review.reviewer}, {review.age} years old
-                    </cite>
-                  </blockquote>
-                ))}
-              </div>
+              ))}
             </div>
           </div>
         </article>
