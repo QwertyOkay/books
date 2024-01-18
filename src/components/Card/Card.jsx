@@ -24,6 +24,14 @@ function Card({ item, type }) {
     setIsViewed(true);
   };
 
+  // Инлайновый стиль для фона карточки
+  const cardStyle = {
+    backgroundImage: `url(${item?.image}), linear-gradient(lightgray 50%, #D9D9D9)`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    borderRadius: '15px', // Добавление border-radius
+  };
+
   return (
     // Вызываем handleViewed при клике на ссылку
     <Link
@@ -31,7 +39,7 @@ function Card({ item, type }) {
       className={styles.card}
       onClick={handleViewed}
     >
-      <div className={styles.cardImage}>
+      <div className={styles.cardImage} style={cardStyle}>
         <LazyLoadImage
           src={item?.image}
           alt={item?.title}
