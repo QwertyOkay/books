@@ -44,9 +44,12 @@
   align-items: center;
   // padding: 24px 0px 12px;
   padding: 24px 35px 12px;
-  gap: 700px;
   justify-content: center;
   // width: 1112px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 700px;
+  }
 }
 
 .sectionNumber {
@@ -67,16 +70,19 @@
 // }
 
 .products {
+  padding: 12px 32px;
   @media screen and (min-width: 720px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    padding: 0px;
   }
 }
 
 .productsItem {
   display: flex;
+  justify-content: center;
 
   @media screen and (min-width: 720px) {
     flex-basis: calc(100% / 2 - 10px * 2);
