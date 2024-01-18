@@ -1,43 +1,3 @@
-// import React, { useState, useMemo } from 'react';
-// import styles from './ProductsBlock.module.scss';
-// import products from '../../data/products.json';
-// import Section from 'components/Section';
-// import Container from 'components/Container';
-// import Card from 'components/Card/Card';
-// import Dropdown from 'components/Dropdown/Dropdown';
-
-// function ProductsBlock({ type }) {
-//   return (
-//     <Section variant="products">
-//       <Container>
-//         <div className={styles.sectionBox}>
-//           <h2 className={styles.sectionTitle}>Books read this month</h2>
-//         </div>
-
-//         <div className={styles.sectionWrap}>
-
-//           <div className={styles.sectionHolder}>
-//             <span>122</span>
-//             <span>Books</span>
-//           </div>
-
-//           <Dropdown />
-
-//         </div>
-//         <div className={styles.products}>
-//           {products?.map(item =>
-//             item.type === type ? (
-//               <li className={styles.productsItem} key={item.id}>
-//                 <Card item={item} type={type} />
-//               </li>
-//             ) : null
-//           )}
-//         </div>
-//       </Container>
-//     </Section>
-//   );
-// }
-
 import React, { useState, useMemo } from 'react';
 import styles from './ProductsBlock.module.scss';
 import products from '../../data/products.json';
@@ -45,6 +5,7 @@ import Section from 'components/Section';
 import Container from 'components/Container';
 import Card from 'components/Card/Card';
 import Dropdown from 'components/Dropdown/Dropdown';
+import LoaderIcon from 'components/LoaderIcon/LoaderIcon';
 
 function ProductsBlock({ type }) {
   const [sortKey, setSortKey] = useState('name'); // Состояние для ключа сортировки
@@ -93,6 +54,9 @@ function ProductsBlock({ type }) {
               <Card item={item} type={type} />
             </li>
           ))}
+        </div>
+        <div className={styles.holderLoader}>
+          <LoaderIcon />
         </div>
       </Container>
     </Section>
