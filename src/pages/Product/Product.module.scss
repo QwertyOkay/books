@@ -60,6 +60,10 @@
 
 .reviewsTable td {
   padding: 10px 0px;
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 34px;
+  }
 }
 
 .review {
@@ -113,14 +117,13 @@
   }
 
   .value {
+    padding: 10px 0;
     color: #fff;
-    // text-align: right;
     font-family: Inter;
     font-size: 16px;
-    padding: 10px 0;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 150%; /* 24px */
     letter-spacing: 0.024px;
     text-transform: capitalize;
     max-width: 520px;
