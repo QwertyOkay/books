@@ -3,8 +3,7 @@ import { useParams } from 'react-router-dom';
 import products from '../../data/products.json';
 import Section from 'components/Section';
 import Container from 'components/Container';
-import ButtonBack from 'components/ButtonBack/ButtonBack';
-
+import ProductHeader from 'components/ProductHeader/ProductHeader';
 import styles from './Product.module.scss';
 
 function Product() {
@@ -16,9 +15,7 @@ function Product() {
   return (
     <Section>
       <Container variant="Product">
-        <header className={styles.header}>
-          <ButtonBack />
-        </header>
+        <ProductHeader />
         <article className={styles.product}>
           <figure className={styles.figure}>
             <img

@@ -34,13 +34,6 @@
   }
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 0 22px 17px;
-  border-bottom: 1px solid #393f45;
-}
-
 .info {
   display: flex;
   flex-direction: column;
@@ -105,7 +98,7 @@
 
 .detailBlock {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
 
   .key {
