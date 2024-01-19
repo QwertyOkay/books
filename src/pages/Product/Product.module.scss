@@ -98,7 +98,7 @@
 
 .detailBlock {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 
   .key {
@@ -119,12 +119,9 @@
     text-transform: capitalize;
   }
 
-  .add {
-    align-items: flex-start;
-  }
-
   .value {
-    padding: 10px 0;
+    // padding: 10px 0;
+    padding: 8px 0;
     color: #fff;
     font-family: Inter;
     font-size: 16px;
@@ -140,6 +137,9 @@
     @media screen and (min-width: 1200px) {
       max-height: none;
     }
+  }
+  .add {
+    align-items: flex-start;
   }
 }
 

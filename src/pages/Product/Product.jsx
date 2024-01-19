@@ -43,7 +43,7 @@ function Product() {
               <span className={styles.key}>Rating:</span>
               <p className={styles.value}>{productItem.rating}</p>
             </div>
-            <div className={styles.detailBlock}>
+            <div className={`${styles.add} ${styles.detailBlock} `}>
               <span className={styles.key}>Description:</span>
               <p className={styles.value}>{productItem.description}</p>
             </div>
