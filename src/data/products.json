@@ -29,7 +29,7 @@
     "image": "/img/products/2.png",
     "author": "Stephen King",
     "name": "The Shining",
-    "description": "Lorem",
+    "description": "The Shining by Stephen King is a gripping tale of horror set in the isolated Overlook Hotel. The story revolves around Jack Torrance, an aspiring writer and recovering alcoholic who accepts a position as the off-season caretaker of the hotel. Along with his wife, Wendy, and son, Danny, who possesses psychic abilities known as the shining, Jack discovers the hotel's dark secrets and slowly descends into madness, driven by the supernatural forces inhabiting the hotel.",
     "badge": "top",
     "type": "best sellers",
     "rating": "4/5",
@@ -54,7 +54,7 @@
     "image": "/img/products/3.png",
     "author": "J.R.R. Tolkien",
     "name": "The Lord of the Rings",
-    "description": "Lorem",
+    "description": "The Lord of the Rings by J.R.R. Tolkien is an epic fantasy adventure that takes place in the fictional world of Middle-earth. It follows the quest of Frodo Baggins, a young hobbit, to destroy the One Ring, which was crafted by the dark lord Sauron to rule over Middle-earth. Assisted by a fellowship of allies, including wizards, elves, dwarves, and men, Frodo embarks on a perilous journey to Mount Doom to destroy the ring",
     "badge": "top",
     "type": "best sellers",
     "rating": "5/5",
@@ -79,7 +79,7 @@
     "image": "/img/products/4.png",
     "author": "Margaret Atwood",
     "name": "The Handmaid's Tale",
-    "description": "Lorem",
+    "description": "The Handmaid's Tale by Margaret Atwood is a dystopian novel set in the totalitarian state of Gilead, where a theocratic regime has overthrown the United States government. The story is told through the eyes of Offred, a Handmaid who is forced into reproductive servitude in a desperate attempt to repopulate a devastated world. The novel explores themes of women's subjugation and the various means by which they attempt to gain individuality and independence",
     "badge": "top",
     "type": "best sellers",
     "rating": "3/5",
@@ -104,7 +104,7 @@
     "image": "/img/products/5.png",
     "author": "George Orwell",
     "name": "1984",
-    "description": "Lorem",
+    "description": "1984 by George Orwell is a profound political satire set in a dystopian future where the world is divided into three totalitarian superstates. The novel follows Winston Smith, a member of the ruling Party in the superstate of Oceania. Under constant surveillance by the Thought Police, Winston secretly detests the Party and dreams of rebellion. The book is a cautionary tale about the dangers of totalitarianism, surveillance, and the loss of individual freedom",
     "badge": "top",
     "type": "best sellers",
     "rating": "5/5",
@@ -112,15 +112,15 @@
     "reviews": [
       {
         "id": "review1",
-        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-        "reviewer": "Maria",
-        "age": 25
+        "text": "1984 is a powerful and disturbing portrayal of a dystopian future. Orwell's vision of a world where freedom and truth are malleable concepts is more relevant today than ever. A sobering, must-read novel.",
+        "reviewer": "Alex",
+        "age": 35
       },
       {
         "id": "review2",
-        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "text": "Orwell's masterpiece is a chilling reminder of the power of government and media in shaping reality. The narrative is gripping, thought-provoking, and eerily prophetic.",
         "reviewer": "Vlad",
-        "age": 30
+        "age": 31
       }
     ]
   },
@@ -129,7 +129,7 @@
     "image": "/img/products/6.png",
     "author": "Harper Leet",
     "name": "To Kill a Mockingbird",
-    "description": "Lorem",
+    "description": "To Kill a Mockingbird by Harper Lee is a deeply moving novel set in the 1930s in the fictional town of Maycomb, Alabama. The story, told through the eyes of young Scout Finch, deals with the issues of racial injustice and moral growth. Scout's father, Atticus Finch, an attorney, is appointed to represent a black man accused of raping a white woman, leading to a trial that exposes the bigotry and prejudice of the small town",
     "badge": "new",
     "type": "best sellers",
     "rating": "2/5",
@@ -154,7 +154,7 @@
     "image": "/img/products/7.png",
     "author": "Gabriel García Márquez",
     "name": "One Hundred Years of Solitude",
-    "description": "Lorem",
+    "description": "One Hundred Years of Solitude by Gabriel García Márquez is a magical realist novel that tells the multi-generational story of the Buendía family in the fictional town of Macondo. The novel explores themes of time, memory, and the supernatural, weaving together the personal and political stories of the family over a century of love, war, and mystical events",
     "badge": "new",
     "type": "best sellers",
     "rating": "5/5",
@@ -179,7 +179,7 @@
     "image": "/img/products/8.png",
     "author": "Jane Austen",
     "name": "Pride and Prejudice",
-    "description": "Lorem",
+    "description": "Pride and Prejudice by Jane Austen is a classic novel of manners set in early 19th century England. The story centers around the intelligent and spirited Elizabeth Bennet, one of five sisters whose mother is determined to see them well married. Elizabeth's encounters with the wealthy and aloof Mr. Darcy form the core of the novel, exploring themes of love, reputation, and class",
     "badge": "new",
     "type": "best sellers",
     "rating": "4/5",
@@ -187,15 +187,21 @@
     "reviews": [
       {
         "id": "review1",
-        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-        "reviewer": "Maria",
-        "age": 25
+        "text": "Pride and Prejudice is an enchanting novel that perfectly captures the complexities of human relationships and societal pressures. Austen's wit and insight into human nature make it a delight to read.",
+        "reviewer": "Mark",
+        "age": 26
       },
       {
         "id": "review2",
-        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
-        "reviewer": "Vlad",
-        "age": 30
+        "text": "A timeless story of love and misunderstanding, Pride and Prejudice remains as captivating today as it was when first published. Austen's character development and dialogue are simply brilliant.",
+        "reviewer": "Veronika",
+        "age": 32
+      },
+      {
+        "id": "review3",
+        "text": "This book is a treasure of classic literature, showcasing Jane Austen's remarkable ability to portray the subtleties of courtship. The dynamic between Elizabeth Bennet and Mr. Darcy is both challenging and endearing.",
+        "reviewer": "Veronika",
+        "age": 33
       }
     ]
   },
@@ -204,7 +210,7 @@
     "image": "/img/products/9.png",
     "author": "Charles Dickens",
     "name": "Great Expectations",
-    "description": "Lorem",
+    "description": "Great Expectations by Charles Dickens is a coming-of-age novel that chronicles the life of an orphan named Pip. Set in Victorian England, it follows Pip's journey from a life of poverty to a life of unexpected wealth, exploring themes of ambition, self-improvement, and social class. The novel also examines the true nature of gentility and the struggle for personal redemption",
     "badge": "new",
     "type": "best sellers",
     "rating": "2/5",
@@ -229,7 +235,7 @@
     "image": "/img/products/10.png",
     "author": "Margaret Atwood",
     "name": "The Handmaid's Tale",
-    "description": "Lorem",
+    "description": "The Handmaid's Tale by Margaret Atwood is a dystopian novel set in the totalitarian state of Gilead, where a theocratic regime has overthrown the United States government. The story is told through the eyes of Offred, a Handmaid who is forced into reproductive servitude in a desperate attempt to repopulate a devastated world. The novel explores themes of women's subjugation and the various means by which they attempt to gain individuality and independence",
     "badge": "new",
     "type": "best sellers",
     "rating": "5/5",
