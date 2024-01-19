@@ -31,6 +31,12 @@ function ProductsBlock({ type }) {
     setSortKey(key === 'Name' ? 'name' : key.toLowerCase());
   };
 
+  const totalBooks = useMemo(() => {
+    // Total items
+    const count = products.filter(product => product.type === type).length;
+    return count + 112;
+  }, [type]);
+
   return (
     <Section variant="products">
       <Container variant="ProductsBlock">
@@ -40,7 +46,7 @@ function ProductsBlock({ type }) {
 
         <div className={styles.sectionWrap}>
           <div className={styles.sectionHolder}>
-            <span>122</span>
+            <span>{totalBooks}</span>
             <span>Books</span>
           </div>
 
