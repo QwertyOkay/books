@@ -1,13 +1,15 @@
 @import 'styles/vars';
 
 .product {
-  padding: 40px 77px 0px 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
+  margin: 0px auto;
 
   @media screen and (min-width: 1280px) {
     flex-direction: row;
     gap: 42px;
+    padding: 40px 77px 0px 40px;
   }
 }
 
@@ -17,11 +19,12 @@
   border-radius: 12px;
 
   @media screen and (max-width: 1279px) {
-    position: absolute;
+    // position: absolute;
     clip: rect(0, 0, 0, 0);
-    width: 1px;
-    height: 1px;
+    // width: 1px;
+    // height: 1px;
     margin: -1px;
+    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -97,6 +100,7 @@
 .detailBlock {
   display: flex;
   align-items: flex-start;
+  justify-content: flex-start;
 
   .key {
     display: flex;
@@ -116,6 +120,10 @@
     text-transform: capitalize;
   }
 
+  .add {
+    align-items: flex-start;
+  }
+
   .value {
     padding: 10px 0;
     color: #fff;
@@ -128,4 +136,19 @@
     text-transform: capitalize;
     max-width: 520px;
   }
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
+
+figcaption {
+  width: 100%;
 }
