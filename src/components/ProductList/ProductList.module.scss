@@ -1,0 +1,32 @@
+.productList {
+  padding: 12px 0px;
+
+  @media screen and (min-width: 720px) {
+    padding: 12px 32px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+.productListItem {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 720px) {
+    flex-basis: calc(100% / 2 - 10px * 2);
+    margin: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc(3.3333333333%);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 719px) {
+      margin-bottom: 20px;
+    }
+  }
+}
