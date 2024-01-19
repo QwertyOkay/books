@@ -65,8 +65,10 @@
 }
 
 .products {
-  padding: 12px 32px;
+  padding: 12px 0px;
+
   @media screen and (min-width: 720px) {
+    padding: 12px 32px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

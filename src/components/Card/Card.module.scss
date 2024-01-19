@@ -13,8 +13,13 @@
 
 .cardImage {
   position: relative;
-  width: 190.4px;
-  height: 240px;
+  width: 350.4px;
+  height: 445px;
+
+  @media screen and (min-width: 1200px) {
+    width: 190.4px;
+    height: 240px;
+  }
 }
 
 .cardImage img {
