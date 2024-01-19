@@ -34,7 +34,7 @@ function ProductsBlock({ type }) {
 
   return (
     <Section variant="products">
-      <Container>
+      <Container variant="ProductsBlock">
         <div className={styles.sectionBox}>
           <h2 className={styles.sectionTitle}>Books read this month</h2>
         </div>

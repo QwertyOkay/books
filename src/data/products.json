@@ -2,318 +2,251 @@
   {
     "id": 1,
     "image": "/img/products/1.png",
-    "image2": "/img/products/02.jpg",
     "author": "J.K. Rowling",
-    "name" : "Harry Potter and the Philosopher's Stone",
+    "name": "Harry Potter and the Philosopher's Stone",
     "description": "For the first time in his life, Harry Potter learns that he is not an ordinary boy. He is a wizard, and his parents were wizards. At the age of eleven, Harry goes to Hogwarts School of Witchcraft and Wizardry, where he makes new friends, learns a lot about the wizarding world, and begins to fight evil.",
-    "category": "",
     "badge": "top",
     "type": "best sellers",
-    "price": 35.49,
-    "colors": ["black"],
-    "sizes": ["M", "L", "XL", "XXL"],
-    "features": ["Printed on 100% cotton Gildan SoftStyle."],
     "rating": "5/5",
     "downloads": "1,000,000",
     "reviews": [
-    {
-      "id": "review1",
-      "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-      "reviewer": "Maria",
-      "age": 25
-    },
-    {
-      "id": "review2",
-      "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
-      "reviewer": "Vlad",
-      "age": 30
-    }]
+      {
+        "id": "review1",
+        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
+        "reviewer": "Maria",
+        "age": 25
+      },
+      {
+        "id": "review2",
+        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "reviewer": "Vlad",
+        "age": 30
+      }
+    ]
   },
-
   {
     "id": 2,
     "image": "/img/products/2.png",
-    "image2": "/img/products/04.jpg",
     "author": "Stephen King",
-    "name" : "The Shining",
-    "description": "",
-    "category": "",
+    "name": "The Shining",
+    "description": "Lorem",
     "badge": "top",
     "type": "best sellers",
-    "price": 35.49,
-    "colors": ["blue"],
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "features": ["Printed on Carolina Blue, 100% cotton Gildan SoftStyle."],
     "rating": "4/5",
     "downloads": "1,000,000",
     "reviews": [
-    {
-      "id": "review1",
-      "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-      "reviewer": "Maria",
-      "age": 25
-    },
-    {
-      "id": "review2",
-      "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
-      "reviewer": "Vlad",
-      "age": 30
-    }]
-    
+      {
+        "id": "review1",
+        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
+        "reviewer": "Maria",
+        "age": 25
+      },
+      {
+        "id": "review2",
+        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "reviewer": "Vlad",
+        "age": 30
+      }
+    ]
   },
   {
     "id": 3,
     "image": "/img/products/3.png",
-    "image2": "/img/products/06.jpg",
     "author": "J.R.R. Tolkien",
-     "name" : "The Lord of the Rings",
+    "name": "The Lord of the Rings",
     "description": "Lorem",
-    "category": "",
     "badge": "top",
     "type": "best sellers",
-    "price": 77.99,
-    "colors": ["grey"],
-    "sizes": ["M", "L", "XL", "XXL"],
-    "features": [
-      "Printed on Gunmetal Heather, 80/20 cotton/poly Independent Trading Style 4000. For exact sizing, please search style name and number."
-    ],
     "rating": "5/5",
     "downloads": "1,000,000",
     "reviews": [
-    {
-      "id": "review1",
-      "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-      "reviewer": "Maria",
-      "age": 25
-    },
-    {
-      "id": "review2",
-      "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
-      "reviewer": "Vlad",
-      "age": 30
-    }]
+      {
+        "id": "review1",
+        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
+        "reviewer": "Maria",
+        "age": 25
+      },
+      {
+        "id": "review2",
+        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "reviewer": "Vlad",
+        "age": 30
+      }
+    ]
   },
   {
     "id": 4,
     "image": "/img/products/4.png",
-    "image2": "/img/products/08.jpg",
     "author": "Margaret Atwood",
-    "name" : "The Handmaid's Tale",
+    "name": "The Handmaid's Tale",
     "description": "Lorem",
-    "category": "",
     "badge": "top",
     "type": "best sellers",
-    "price": 35.0,
-    "colors": ["grey"],
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "features": [
-      "The 80’s brings back a lot of great memories for music, fashion, hairstyles.",
-      "Some of those we’re holding onto, some not.",
-      "90% ringspun cotton, 10% polyester.",
-      " For exact sizing, search Tultex style #245"
-    ],
     "rating": "3/5",
     "downloads": "1,000,000",
     "reviews": [
-    {
-      "id": "review1",
-      "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-      "reviewer": "Maria",
-      "age": 25
-    },
-    {
-      "id": "review2",
-      "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
-      "reviewer": "Vlad",
-      "age": 30
-    }]
+      {
+        "id": "review1",
+        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
+        "reviewer": "Maria",
+        "age": 25
+      },
+      {
+        "id": "review2",
+        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "reviewer": "Vlad",
+        "age": 30
+      }
+    ]
   },
   {
     "id": 5,
     "image": "/img/products/5.png",
-    "image2": "/img/products/10.jpg",
     "author": "George Orwell",
-    "name" : "1984",
+    "name": "1984",
     "description": "Lorem",
-    "category": "",
     "badge": "top",
     "type": "best sellers",
-    "price": 74.99,
-    "colors": ["black"],
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "features": [
-      "100% polyester, single layer, with interior water resistant coating.",
-      "Pockets on the side.",
-      "For exact sizing, please see attached size chart."
-    ],
     "rating": "5/5",
     "downloads": "1,000,000",
     "reviews": [
-    {
-      "id": "review1",
-      "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-      "reviewer": "Maria",
-      "age": 25
-    },
-    {
-      "id": "review2",
-      "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
-      "reviewer": "Vlad",
-      "age": 30
-    }]
+      {
+        "id": "review1",
+        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
+        "reviewer": "Maria",
+        "age": 25
+      },
+      {
+        "id": "review2",
+        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "reviewer": "Vlad",
+        "age": 30
+      }
+    ]
   },
   {
     "id": 6,
     "image": "/img/products/6.png",
-    "image2": "",
     "author": "Harper Leet",
-    "name" : "To Kill a Mockingbird",
+    "name": "To Kill a Mockingbird",
     "description": "Lorem",
-    "category": "",
     "badge": "new",
     "type": "best sellers",
-    "price": 35.99,
-    "colors": ["blue"],
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "features": [
-      " A 100% cotton longsleeve, with a woven patch with the nut & bolt, and RUSH embroidered above.",
-      "Printed on 100% cotton Next Level Apparel."
-    ],
     "rating": "2/5",
     "downloads": "1,000,000",
     "reviews": [
-    {
-      "id": "review1",
-      "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-      "reviewer": "Maria",
-      "age": 25
-    },
-    {
-      "id": "review2",
-      "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
-      "reviewer": "Vlad",
-      "age": 30
-    }]
+      {
+        "id": "review1",
+        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
+        "reviewer": "Maria",
+        "age": 25
+      },
+      {
+        "id": "review2",
+        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "reviewer": "Vlad",
+        "age": 30
+      }
+    ]
   },
   {
     "id": 7,
     "image": "/img/products/7.png",
-    "image2": "",
     "author": "Gabriel García Márquez",
-    "name" : "One Hundred Years of Solitude",
+    "name": "One Hundred Years of Solitude",
     "description": "Lorem",
-    "category": "",
     "badge": "new",
     "type": "best sellers",
-    "price": 76.99,
-    "colors": ["white"],
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "features": [
-      "Printed on the front, and sleeve.",
-      "This is printed on a soft-washed, ring spun, 80/20 cotton/poly hoody from Comfort Colors.",
-      "This is garment-dyed, which means it has that lived-in, washed-out feel."
-    ],
     "rating": "5/5",
     "downloads": "1,000,000",
     "reviews": [
-    {
-      "id": "review1",
-      "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-      "reviewer": "Maria",
-      "age": 25
-    },
-    {
-      "id": "review2",
-      "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
-      "reviewer": "Vlad",
-      "age": 30
-    }]
+      {
+        "id": "review1",
+        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
+        "reviewer": "Maria",
+        "age": 25
+      },
+      {
+        "id": "review2",
+        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "reviewer": "Vlad",
+        "age": 30
+      }
+    ]
   },
   {
     "id": 8,
     "image": "/img/products/8.png",
-    "image2": "/img/products/16.jpg",
     "author": "Jane Austen",
-    "name" : "Pride and Prejudice",
+    "name": "Pride and Prejudice",
     "description": "Lorem",
-    "category": "",
     "badge": "new",
     "type": "best sellers",
-    "price": 150.0,
-    "colors": ["black"],
-    "sizes": ["S/M", "L/XL"],
-    "features": [
-      "Embroidered skull logo on the front chest, and embroidered RUSH 1974 on the hood.",
-      "Two side pockets, belt with loops, and custom Rush labels inside also.",
-      "This robe comes in two sizes, and we recommend the larger size for anyone over 5’9” in height.",
-      "100% Turkish Cotton Terry."
-    ],
     "rating": "4/5",
     "downloads": "1,000,000",
     "reviews": [
-    {
-      "id": "review1",
-      "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-      "reviewer": "Maria",
-      "age": 25
-    },
-    {
-      "id": "review2",
-      "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
-      "reviewer": "Vlad",
-      "age": 30
-    }]
+      {
+        "id": "review1",
+        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
+        "reviewer": "Maria",
+        "age": 25
+      },
+      {
+        "id": "review2",
+        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "reviewer": "Vlad",
+        "age": 30
+      }
+    ]
   },
   {
     "id": 9,
     "image": "/img/products/9.png",
-    "image2": "/img/products/18.jpg",
     "author": "Charles Dickens",
-    "name" : "Great Expectations",
+    "name": "Great Expectations",
     "description": "Lorem",
-    "category": "",
     "badge": "new",
     "type": "best sellers",
-    "price": 76.0,
-    "colors": ["black"],
-    "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
-    "features": [
-      "A classic design from A Farewell To Kings, with this issue being a 40th Anniversary version.",
-      "Printed on the front and back, and an embroidered Starman on the front near the pocket.",
-      "Fabric is cotton/poly blend."
-    ],
-    "rating": "2/5"
+    "rating": "2/5",
+    "downloads": "1,000,000",
+    "reviews": [
+      {
+        "id": "review1",
+        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
+        "reviewer": "Maria",
+        "age": 25
+      },
+      {
+        "id": "review2",
+        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "reviewer": "Vlad",
+        "age": 30
+      }
+    ]
   },
   {
     "id": 10,
     "image": "/img/products/10.png",
-    "image2": "",
     "author": "Margaret Atwood",
-    "name" : "The Handmaid's Tale",
+    "name": "The Handmaid's Tale",
     "description": "Lorem",
-    "category": "",
     "badge": "new",
     "type": "best sellers",
-    "price": 31.99,
-    "colors": ["blue"],
-    "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
-    "features": [
-      "This tee is printed on 100% cotton Gildan SoftStyle or similar."
-    ],
     "rating": "5/5",
     "downloads": "1,000,000",
     "reviews": [
-    {
-      "id": "review1",
-      "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
-      "reviewer": "Maria",
-      "age": 25
-    },
-    {
-      "id": "review2",
-      "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
-      "reviewer": "Vlad",
-      "age": 30
-    }]
+      {
+        "id": "review1",
+        "text": "This is my all-time favorite book. It is magical, exciting, and inspiring.",
+        "reviewer": "Maria",
+        "age": 25
+      },
+      {
+        "id": "review2",
+        "text": "I read this book when I was a child, and it changed my life. It taught me to believe in myself and my dreams.",
+        "reviewer": "Vlad",
+        "age": 30
+      }
+    ]
   }
 ]
