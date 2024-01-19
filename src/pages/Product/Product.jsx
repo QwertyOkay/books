@@ -4,6 +4,7 @@ import products from '../../data/products.json';
 import Section from 'components/Section';
 import Container from 'components/Container';
 import ProductHeader from 'components/ProductHeader/ProductHeader';
+import ProductImageWithCaption from 'components/ProductImageWithCaption/ProductImageWithCaption';
 import styles from './Product.module.scss';
 
 function Product() {
@@ -17,19 +18,11 @@ function Product() {
       <Container variant="Product">
         <ProductHeader />
         <article className={styles.product}>
-          <figure className={styles.figure}>
-            <img
-              src={productItem[selectedImg]}
-              alt={productItem.name}
-              className={styles.mainImg}
-            />
-            <figcaption className={styles.caption}>
-              <div className={styles.detailBlock}>
-                <span className={styles.key}>Downloads: </span>
-                <span className={styles.value}>{productItem.downloads}</span>
-              </div>
-            </figcaption>
-          </figure>
+          <ProductImageWithCaption
+            image={productItem[selectedImg]}
+            name={productItem.name}
+            downloads={productItem.downloads}
+          />
           <div className={styles.info}>
             <div className={styles.detailBlock}>
               <span className={styles.key}>Title:</span>
