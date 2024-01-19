@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from './ProductsBlock.module.scss';
 import Section from 'components/Section';
 import Container from 'components/Container';
@@ -36,5 +37,9 @@ function ProductsBlock({ type }) {
     </Section>
   );
 }
+
+ProductsBlock.propTypes = {
+  type: PropTypes.string.isRequired,
+};
 
 export default ProductsBlock;
