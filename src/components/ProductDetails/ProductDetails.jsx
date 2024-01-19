@@ -3,7 +3,7 @@ import styles from './ProductDetails.module.scss';
 
 function ProductDetails({ title, author, rating, description }) {
   return (
-    <div className={styles.info}>
+    <>
       <div className={styles.detailBlock}>
         <span className={styles.key}>Title:</span>
         <h1 className={styles.value}>{title}</h1>
@@ -20,7 +20,7 @@ function ProductDetails({ title, author, rating, description }) {
         <span className={styles.key}>Description:</span>
         <p className={styles.value}>{description}</p>
       </div>
-    </div>
+    </>
   );
 }
 

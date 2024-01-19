@@ -5,9 +5,8 @@ import Section from 'components/Section';
 import Container from 'components/Container';
 import ProductHeader from 'components/ProductHeader/ProductHeader';
 import ProductImageWithCaption from 'components/ProductImageWithCaption/ProductImageWithCaption';
+import ProductDetails from 'components/ProductDetails/ProductDetails';
 import ProductReviews from 'components/ProductReviews/ProductReviews';
-
-// import ProductDetails from 'components/ProductDetails/ProductDetails';
 
 import styles from './Product.module.scss';
 
@@ -33,22 +32,12 @@ function Product() {
           />
 
           <div className={styles.info}>
-            <div className={styles.detailBlock}>
-              <span className={styles.key}>Title:</span>
-              <h1 className={styles.value}>{productItem.name}</h1>
-            </div>
-            <div className={styles.detailBlock}>
-              <span className={styles.key}>Author:</span>
-              <h3 className={styles.value}>{productItem.author}</h3>
-            </div>
-            <div className={styles.detailBlock}>
-              <span className={styles.key}>Rating:</span>
-              <p className={styles.value}>{productItem.rating}</p>
-            </div>
-            <div className={styles.detailBlock}>
-              <span className={styles.key}>Description:</span>
-              <p className={styles.value}>{productItem.description}</p>
-            </div>
+            <ProductDetails
+              title={productItem.name}
+              author={productItem.author}
+              rating={productItem.rating}
+              description={productItem.description}
+            />
 
             <ProductReviews reviews={productItem.reviews} />
           </div>
