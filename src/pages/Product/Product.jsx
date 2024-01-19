@@ -5,6 +5,10 @@ import Section from 'components/Section';
 import Container from 'components/Container';
 import ProductHeader from 'components/ProductHeader/ProductHeader';
 import ProductImageWithCaption from 'components/ProductImageWithCaption/ProductImageWithCaption';
+import ProductReviews from 'components/ProductReviews/ProductReviews';
+
+// import ProductDetails from 'components/ProductDetails/ProductDetails';
+
 import styles from './Product.module.scss';
 
 function Product() {
@@ -12,6 +16,10 @@ function Product() {
   const { id } = useParams();
   const catId = parseInt(id, 10);
   const productItem = products.find(item => item.id === catId);
+
+  if (!productItem) {
+    return <div>Product not found</div>;
+  }
 
   return (
     <Section>
@@ -23,6 +31,7 @@ function Product() {
             name={productItem.name}
             downloads={productItem.downloads}
           />
+
           <div className={styles.info}>
             <div className={styles.detailBlock}>
               <span className={styles.key}>Title:</span>
@@ -41,23 +50,7 @@ function Product() {
               <p className={styles.value}>{productItem.description}</p>
             </div>
 
-            <table className={styles.reviewsTable}>
-              <tbody>
-                <tr>
-                  <th className={styles.reviewHeader}>Reader Reviews:</th>
-                  <td>
-                    {productItem.reviews.map((review, index) => (
-                      <p key={review.id} className={styles.review}>
-                        "{review.text}"
-                        <cite className={styles.reviewer}>
-                          {review.reviewer}, {review.age} years old
-                        </cite>
-                      </p>
-                    ))}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <ProductReviews reviews={productItem.reviews} />
           </div>
         </article>
       </Container>
