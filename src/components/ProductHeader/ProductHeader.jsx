@@ -1,6 +1,6 @@
 import React from 'react';
 import ButtonBack from 'components/ButtonBack/ButtonBack';
-import styles from './ProductHeader.module.scss'; // предполагается, что стили будут вынесены в отдельный файл
+import styles from './ProductHeader.module.scss';
 
 function ProductHeader() {
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../../data/products.json';
 import Section from 'components/Section';
@@ -15,6 +15,10 @@ function Product() {
   const { id } = useParams();
   const catId = parseInt(id, 10);
   const productItem = products.find(item => item.id === catId);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!productItem) {
     return <div>Product not found</div>;
