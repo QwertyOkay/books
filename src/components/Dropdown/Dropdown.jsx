@@ -12,7 +12,6 @@ function Dropdown({ onSort }) {
   const onOptionClicked = value => () => {
     setSelectedOption(value);
     setIsOpen(false);
-    // Обновляем ключ сортировки в зависимости от выбранной опции
     onSort(value === 'Name' ? 'name' : value.toLowerCase());
   };
 

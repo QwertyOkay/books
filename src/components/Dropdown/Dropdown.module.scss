@@ -1,11 +1,8 @@
-// Dropdown.module.scss
-
 .dropdown {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  // gap: 16px;
 }
 
 .dropdownButton {
@@ -40,7 +37,6 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    // margin-left: 8px;
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -89,10 +85,6 @@
   line-height: normal;
   letter-spacing: 0.021px;
   text-transform: capitalize;
-
-  // &:hover {
-  //   background-color: #f1f1f1;
-  // }
 }
 
 .selected {
@@ -128,7 +120,6 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    // margin-right: 8px;
     background-image: url('../../../public/img/updown.svg');
     background-size: contain;
     background-repeat: no-repeat;

@@ -8,7 +8,7 @@ import Dropdown from 'components/Dropdown/Dropdown';
 import LoaderIcon from 'components/LoaderIcon/LoaderIcon';
 
 function ProductsBlock({ type }) {
-  const [sortKey, setSortKey] = useState('name'); // Состояние для ключа сортировки
+  const [sortKey, setSortKey] = useState('name');
 
   const sortedProducts = useMemo(() => {
     const productsToSort = products.filter(product => product.type === type);
@@ -18,16 +18,15 @@ function ProductsBlock({ type }) {
       } else if (sortKey === 'author') {
         return (a.author || '').localeCompare(b.author || '');
       } else if (sortKey === 'rating') {
-        // Преобразуем строку рейтинга "5/5" в число для сравнения
+        // Convert rating "5/5" into a number
         const ratingA = Number(a.rating.replace('/5', ''));
         const ratingB = Number(b.rating.replace('/5', ''));
-        return ratingB - ratingA; // Для сортировки по убыванию
+        return ratingB - ratingA; // Sort
       }
       return 0;
     });
-  }, [type, sortKey]); // Пересчитываем, когда меняется тип или ключ сортировки
+  }, [type, sortKey]);
 
-  // Функция для обновления ключа сортировки
   const handleSort = key => {
     setSortKey(key === 'Name' ? 'name' : key.toLowerCase());
   };

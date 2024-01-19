@@ -9,7 +9,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import HelmetHead from 'components/HelmetHead';
 import Home from './pages/Home';
 import Product from './pages/Product/Product';
-import Products from './pages/Products/Products';
 
 import './styles/global.scss';
 
@@ -30,14 +29,6 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-      },
-      {
-        path: 'products',
-        element: <Products />,
-      },
-      {
-        path: 'products/:category',
-        element: <Products />,
       },
       {
         path: 'product/:id',

@@ -51,7 +51,6 @@ function Product() {
               <p className={styles.value}>{productItem.description}</p>
             </div>
 
-            {/* Отдельная таблица для отзывов */}
             <table className={styles.reviewsTable}>
               <tbody>
                 <tr>
