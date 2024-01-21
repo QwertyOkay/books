@@ -1,3 +1,4 @@
+import React, { Suspense } from 'react';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -8,7 +9,8 @@ import { ToastContainer, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HelmetHead from 'components/HelmetHead';
 import Home from './pages/Home';
-import Product from './pages/Product/Product';
+import LoaderIcon from 'components/LoaderIcon/LoaderIcon';
+// import Product from './pages/Product/Product';
 
 import './styles/global.scss';
 
@@ -19,7 +21,10 @@ const Layout = () => {
       <ToastContainer autoClose={2000} transition={Slide} theme="dark" />
     </>
   );
-};
+}; 
+
+const Product = React.lazy(() => import('./pages/Product/Product'));
+
 
 const router = createBrowserRouter([
   {
@@ -46,7 +51,9 @@ function App() {
   return (
     <>
       <HelmetHead />
-      <RouterProvider router={router} />
+      <Suspense fallback={<LoaderIcon />}>
+        <RouterProvider router={router} />
+      </Suspense>
     </>
   );
 }
