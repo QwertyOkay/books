@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import styles from './ProductsBlock.module.scss';
 import Section from 'components/Section';
@@ -7,33 +7,11 @@ import SortHandler from 'components/SortHandler/SortHandler';
 import BookCounter from 'components/BookCounter/BookCounter';
 import ProductList from 'components/ProductList/ProductList';
 import InfiniteScroll from 'components/InfiniteScroll/InfiniteScroll';
-import useSortedProducts from '../../hooks/useSortedProducts';
-import products from '../../data/products.json';
+import { ProductsContext } from '../../context/ProductsContext';
 
 function ProductsBlock({ type }) {
-  const [sortKey, setSortKey] = useState('name');
-  const [loadedProducts, setLoadedProducts] = useState([]);
-  const [isFetchingMore, setIsFetchingMore] = useState(false);
-
-  const sortedProducts = useSortedProducts(products, sortKey, type);
-
-  useEffect(() => {
-    setLoadedProducts(sortedProducts.slice(0, 10));
-  }, [sortedProducts]);
-
-  const fetchMoreProducts = useCallback(() => {
-    if (isFetchingMore || loadedProducts.length >= sortedProducts.length) {
-      return;
-    }
-    setIsFetchingMore(true);
-    setTimeout(() => {
-      setLoadedProducts(prevProducts => [
-        ...prevProducts,
-        ...sortedProducts.slice(prevProducts.length, prevProducts.length + 10),
-      ]);
-      setIsFetchingMore(false);
-    }, 2000);
-  }, [isFetchingMore, loadedProducts, sortedProducts]);
+  const { loadedProducts, isFetchingMore, fetchMoreProducts, setSortKey } =
+    useContext(ProductsContext);
 
   return (
     <Section variant="products">
@@ -48,7 +26,7 @@ function ProductsBlock({ type }) {
         <InfiniteScroll
           onLoadMore={fetchMoreProducts}
           loading={isFetchingMore}
-          hasMore={loadedProducts.length < sortedProducts.length}
+          hasMore={loadedProducts.length < 100}
         >
           <ProductList products={loadedProducts} type={type} />
         </InfiniteScroll>

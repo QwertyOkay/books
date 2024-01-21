@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
-import LoaderIcon from 'components/LoaderIcon/LoaderIcon';
-import styles from './InfiniteScroll.module.scss';
+import Loader from '../Loader/Loader';
 
 const InfiniteScroll = ({ onLoadMore, loading, hasMore, children }) => {
   const loaderRef = useRef(null);
@@ -34,11 +33,7 @@ const InfiniteScroll = ({ onLoadMore, loading, hasMore, children }) => {
   return (
     <>
       {children}
-      {loading && (
-        <div className={styles.holderLoader}>
-          <LoaderIcon />
-        </div>
-      )}
+      {loading && <Loader />}
       <div ref={loaderRef} />
     </>
   );

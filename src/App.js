@@ -8,16 +8,19 @@ import {
 import HelmetHead from 'components/HelmetHead';
 import Home from './pages/Home';
 import LoaderIcon from 'components/LoaderIcon/LoaderIcon';
+import { ProductsProvider } from './context/ProductsContext';
+
 
 import './styles/global.scss';
 
-const Layout = () => {
+const Layout = ({ type }) => {
   return (
-    <>
+    <ProductsProvider type={type}>
       <Outlet />
-    </>
+    </ProductsProvider>
   );
-}; 
+};
+
 
 const Product = React.lazy(() => import('./pages/Product/Product'));
 
@@ -25,7 +28,7 @@ const Product = React.lazy(() => import('./pages/Product/Product'));
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />,
+    element: <Layout type="best sellers" />,
     children: [
       {
         path: '/',
