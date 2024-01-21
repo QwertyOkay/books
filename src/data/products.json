@@ -254,5 +254,30 @@
         "age": 30
       }
     ]
+  },
+  {
+    "id": 11,
+    "image": "/img/products/11.png",
+    "author": "XXXX",
+    "name": "YYYY",
+    "description": "Kafka on the Shore, a novel by Haruki Murakami, intertwines the odd, mystical journeys of Kafka Tamura, a 15-year-old runaway, and Nakata, an aging and illiterate 'finder' of lost cats. The narrative blends elements of magical realism, fantasy, and prophetic interludes, delivering a story that delves into themes of fate, consciousness, and the complexities of the human mind.",
+    "badge": "new",
+    "type": "best sellers",
+    "rating": "2/5",
+    "downloads": "999,999",
+    "reviews": [
+      {
+        "id": "review1",
+        "text": "An enchanting and perplexing tale that captures the essence of magical realism. Murakami's storytelling is unparalleled",
+        "reviewer": "Sophia",
+        "age": 28
+      },
+      {
+        "id": "review2",
+        "text": "Murakami takes you on a journey that is as bizarre as it is mesmerizing. Kafka on the Shore left a lasting impression on me",
+        "reviewer": "Jack",
+        "age": 35
+      }
+    ]
   }
 ]
