@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductsBlock renders correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <div>
+        <h2>
+          Books read this month
+        </h2>
+      </div>
+      <div>
+        <div>
+          <span>
+            111
+          </span>
+          <span>
+            Books
+          </span>
+        </div>
+        <div>
+          <span>
+            Sort By
+          </span>
+          <button
+            class="undefined "
+          >
+            Name
+            <span />
+          </button>
+        </div>
+      </div>
+      <ul />
+      <div />
+    </div>
+  </div>
+</DocumentFragment>
+`;

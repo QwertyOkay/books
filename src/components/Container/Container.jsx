@@ -1,6 +1,7 @@
-import styles from "./Container.module.scss";
+import React from 'react';
+import styles from './Container.module.scss';
 
-function Container({ variant = "container", children }) {
+function Container({ variant = 'container', children }) {
   return <div className={styles[variant]}>{children}</div>;
 }
 

@@ -1,10 +1,9 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import styles from './ProductsBlock.module.scss';
 import Section from 'components/Section';
 import Container from 'components/Container';
-import SortHandler from 'components/SortHandler/SortHandler';
-import BookCounter from 'components/BookCounter/BookCounter';
+import Header from 'components/Header/Header';
+import SortingAndCountingSection from 'components/SortingAndCountingSection/SortingAndCountingSection'; // Подключите новый компонент
 import ProductList from 'components/ProductList/ProductList';
 import InfiniteScroll from 'components/InfiniteScroll/InfiniteScroll';
 import { ProductsContext } from '../../context/ProductsContext';
@@ -16,13 +15,8 @@ function ProductsBlock({ type }) {
   return (
     <Section variant="products">
       <Container variant="ProductsBlock">
-        <div className={styles.sectionBox}>
-          <h2 className={styles.sectionTitle}>Books read this month</h2>
-        </div>
-        <div className={styles.sectionWrap}>
-          <BookCounter type={type} />
-          <SortHandler onSort={setSortKey} />
-        </div>
+        <Header title="Books read this month" />
+        <SortingAndCountingSection type={type} onSort={setSortKey} />
         <InfiniteScroll
           onLoadMore={fetchMoreProducts}
           loading={isFetchingMore}

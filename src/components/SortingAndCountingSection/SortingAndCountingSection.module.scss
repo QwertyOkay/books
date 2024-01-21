@@ -1,0 +1,10 @@
+.sectionWrap {
+  display: flex;
+  align-items: center;
+  padding: 24px 35px 18px;
+  justify-content: space-around;
+
+  @media screen and (min-width: 1200px) {
+    gap: 688px;
+  }
+}

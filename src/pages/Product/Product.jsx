@@ -7,14 +7,15 @@ import ProductHeader from 'components/ProductHeader/ProductHeader';
 import ProductImageWithCaption from 'components/ProductImageWithCaption/ProductImageWithCaption';
 import ProductDetails from 'components/ProductDetails/ProductDetails';
 import ProductReviews from 'components/ProductReviews/ProductReviews';
-
 import styles from './Product.module.scss';
 
 function Product() {
   const [selectedImg] = useState('image');
   const { id } = useParams();
   const catId = parseInt(id, 10);
-  const productItem = products.find(item => item.id === catId);
+  const productItem = products
+    ? products.find(item => item.id === catId)
+    : null;
 
   useEffect(() => {
     window.scrollTo(0, 0);

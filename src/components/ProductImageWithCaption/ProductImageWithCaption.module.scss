@@ -37,7 +37,6 @@ figcaption {
   }
 
   .value {
-    // padding: 10px 0;
     padding: 8px 0;
     color: #fff;
     font-family: Inter;
@@ -66,17 +65,14 @@ figcaption {
   border-radius: 12px;
 
   @media screen and (max-width: 1279px) {
-    // position: absolute;
     clip: rect(0, 0, 0, 0);
-    // width: 1px;
-    // height: 1px;
     margin: -1px;
     margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1280px) {
-    display: block; // Changed from flex to block
-    flex: none; // Remove flex to allow natural image size
+    display: block;
+    flex: none;
     margin-bottom: 20px;
   }
 }
