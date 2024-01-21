@@ -3,69 +3,37 @@ import PropTypes from 'prop-types';
 import styles from './ProductsBlock.module.scss';
 import Section from 'components/Section';
 import Container from 'components/Container';
-import Dropdown from 'components/Dropdown/Dropdown';
-import LoaderIcon from 'components/LoaderIcon/LoaderIcon';
+import SortHandler from 'components/SortHandler/SortHandler';
+import BookCounter from 'components/BookCounter/BookCounter';
+import ProductList from 'components/ProductList/ProductList';
+import InfiniteScroll from 'components/InfiniteScroll/InfiniteScroll';
 import useSortedProducts from '../../hooks/useSortedProducts';
 import products from '../../data/products.json';
-import BookCounter from '../BookCounter/BookCounter';
-import ProductList from '../ProductList/ProductList';
 
 function ProductsBlock({ type }) {
   const [sortKey, setSortKey] = useState('name');
-  const [sortChanged, setSortChanged] = useState(false);
-
-  const sortedProducts = useSortedProducts(products, sortKey, type);
-
   const [loadedProducts, setLoadedProducts] = useState([]);
   const [isFetchingMore, setIsFetchingMore] = useState(false);
+
+  const sortedProducts = useSortedProducts(products, sortKey, type);
 
   useEffect(() => {
     setLoadedProducts(sortedProducts.slice(0, 10));
   }, [sortedProducts]);
 
   const fetchMoreProducts = useCallback(() => {
-    if (isFetchingMore || loadedProducts.length >= sortedProducts.length)
+    if (isFetchingMore || loadedProducts.length >= sortedProducts.length) {
       return;
-
+    }
     setIsFetchingMore(true);
     setTimeout(() => {
-      const nextProducts = sortedProducts.slice(
-        loadedProducts.length,
-        loadedProducts.length + 10
-      );
-      setLoadedProducts(prevProducts => [...prevProducts, ...nextProducts]);
+      setLoadedProducts(prevProducts => [
+        ...prevProducts,
+        ...sortedProducts.slice(prevProducts.length, prevProducts.length + 10),
+      ]);
       setIsFetchingMore(false);
     }, 2000);
-  }, [isFetchingMore, loadedProducts.length, sortedProducts]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (
-        window.innerHeight + window.scrollY >=
-          document.body.offsetHeight - 300 &&
-        loadedProducts.length < sortedProducts.length &&
-        !isFetchingMore
-      ) {
-        fetchMoreProducts();
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [
-    isFetchingMore,
-    loadedProducts.length,
-    sortedProducts.length,
-    fetchMoreProducts,
-  ]);
-
-  const handleSort = key => {
-    setSortKey(key === 'Name' ? 'name' : key.toLowerCase());
-    setSortChanged(true);
-
-    const timeout = setTimeout(() => setSortChanged(false), 500);
-    return () => clearTimeout(timeout);
-  };
+  }, [isFetchingMore, loadedProducts, sortedProducts]);
 
   return (
     <Section variant="products">
@@ -73,23 +41,17 @@ function ProductsBlock({ type }) {
         <div className={styles.sectionBox}>
           <h2 className={styles.sectionTitle}>Books read this month</h2>
         </div>
-
         <div className={styles.sectionWrap}>
           <BookCounter type={type} />
-          <Dropdown onSort={handleSort} />
+          <SortHandler onSort={setSortKey} />
         </div>
-
-        <ProductList
-          products={loadedProducts}
-          type={type}
-          sortChanged={sortChanged}
-        />
-
-        {isFetchingMore && loadedProducts.length < sortedProducts.length && (
-          <div className={styles.holderLoader}>
-            <LoaderIcon />
-          </div>
-        )}
+        <InfiniteScroll
+          onLoadMore={fetchMoreProducts}
+          loading={isFetchingMore}
+          hasMore={loadedProducts.length < sortedProducts.length}
+        >
+          <ProductList products={loadedProducts} type={type} />
+        </InfiniteScroll>
       </Container>
     </Section>
   );

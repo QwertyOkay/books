@@ -4,7 +4,7 @@ const useSortedProducts = (products, sortKey, type) => {
   return useMemo(() => {
     const productsToSort = products.filter(product => product.type === type);
 
-    console.log(productsToSort.map(product => product.name));
+    // console.log(productsToSort.map(product => product.name));
 
     return productsToSort.sort((a, b) => {
       if (sortKey === 'name') {

@@ -1,19 +1,15 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from './Dropdown.module.scss';
 
-function Dropdown({ onSort }) {
+const Dropdown = ({ selectedOption, onOptionClicked }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('Name');
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
 
   const options = ['Author', 'Name', 'Rating'];
-
-  const toggleDropdown = () => setIsOpen(!isOpen);
-
-  const onOptionClicked = value => () => {
-    setSelectedOption(value);
-    setIsOpen(false);
-    onSort(value === 'Name' ? 'name' : value.toLowerCase());
-  };
 
   return (
     <div className={styles.dropdown}>
@@ -23,6 +19,7 @@ function Dropdown({ onSort }) {
         onClick={toggleDropdown}
       >
         {selectedOption}
+        <span className={styles.dropdownArrow} />
       </button>
       {isOpen && (
         <ul className={styles.dropdownList}>
@@ -31,7 +28,10 @@ function Dropdown({ onSort }) {
               className={`${styles.dropdownItem} ${
                 selectedOption === option ? styles.selected : ''
               }`}
-              onClick={onOptionClicked(option)}
+              onClick={() => {
+                onOptionClicked(option);
+                toggleDropdown();
+              }}
               key={option}
             >
               {option}
@@ -41,6 +41,11 @@ function Dropdown({ onSort }) {
       )}
     </div>
   );
-}
+};
+
+Dropdown.propTypes = {
+  selectedOption: PropTypes.string.isRequired,
+  onOptionClicked: PropTypes.func.isRequired,
+};
 
 export default Dropdown;

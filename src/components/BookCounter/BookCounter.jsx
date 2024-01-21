@@ -5,7 +5,7 @@ import styles from './BookCounter.module.scss';
 const BookCounter = ({ type }) => {
   const totalBooks = useMemo(() => {
     const count = products.filter(product => product.type === type).length;
-    return count + 112; // Fixed
+    return count + 111; // Fixed
   }, [type]);
 
   return (
